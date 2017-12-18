@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.DC.android"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // 轮播图片
+    //  compile 'com.ashokvarma.android:bottom-navigation-bar:0.9.5’
+    compile(name: 'bottom-navigation-bar-2.0.3', ext: 'aar')
+    //  compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.3'
+
+    //相册
+
+    //日历开源库
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.jude:rollviewpager:1.4.6'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'org.litepal.android:core:1.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+    compile 'com.linchaolong.android:imagepicker:1.2'
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    compile 'com.coder:circlebar:1.0.0'
+    compile 'com.prolificinteractive:material-calendarview:1.4.0'
+    testCompile 'junit:junit:4.12'
+}

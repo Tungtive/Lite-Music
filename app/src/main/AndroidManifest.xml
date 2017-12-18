@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.DC.android">
+        
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="Music">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Lite Music"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="INSURANCE+" />
+        <activity
+            android:name=".ProjectActivity"
+            android:theme="@style/ProjectActivityTheme" />
+        <activity
+            android:name=".PlanActivity"
+            android:label="My Plan" />
+        <activity
+            android:name=".MeActivity"
+            android:label="Me" />
+
+        <!-- ImagePicker 相关配置 -->
+        <activity
+            android:name="com.linchaolong.android.imagepicker.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Add_PlanActivity"
+            android:label="Add Plan" />
+        <activity
+            android:name=".DonateActivity"
+            android:label="支持项目" />
+        <activity
+            android:name=".WalletActivity"
+            android:label="钱包" />
+        <activity
+            android:name=".ProjectMessageActivity"
+<<<<<<< HEAD
+            android:label="热门评论" />
+        <activity
+            android:name=".UserDonateProjectActivity"
+            android:label="最近播放" />
+=======
+            android:label="TA的帮助" />
+        <activity
+            android:name=".UserDonateProjectActivity"
+            android:label="Project" />
+>>>>>>> 7d9c07a30238245008c650f3d764d709944b6626
+        <activity
+            android:name=".UserStarProjectActivity"
+            android:label="Project" />
+        <activity android:name=".UserCreateProjectActivity"
+                   android:label="Project" ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profiles_default_personal_bg"
+   >
+
+    <ImageView
+        android:id="@+id/iv_personal_bg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dip"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        />
+
+
+    <View
+        android:id="@+id/line_up"
+        android:layout_width="2dip"
+        android:layout_height="400dip"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="-290dip"
+        android:background="@android:color/transparent" />
+
+    <com.DC.android.PersonalScrollView
+        android:id="@+id/personalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dip"
+                android:background="#00000000"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_header"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dip"
+                  />
+
+                <TextView
+                    android:id="@+id/text_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dip"
+                    android:textColor="#ffffff"
+                    android:textSize="100sp"
+                    />
+                <TextView
+                    android:id="@+id/text_header_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="205dip"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_line_down"
+                    android:layout_width="20dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dip"
+                    android:layout_marginTop="200dip"
+                    android:background="@android:color/transparent" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/iv_line_down"
+                    android:layout_marginTop="-3dip"
+                    android:background="@android:color/transparent" />
+
+
+            </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="60dip"
+               android:background="@android:color/transparent"
+               >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_plan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+               android:background="#7effffff"
+                />
+           </RelativeLayout>
+
+        </LinearLayout>
+    </com.DC.android.PersonalScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DAD6D7"
+    android:fitsSystemWindows="true"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/art_login_bg" />
+    <Button
+        android:id="@+id/login"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:background="@drawable/border_line_while_squre"
+        android:text="Login"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp" />
+
+
+    <TextView
+        android:id="@+id/register"
+        android:text="Not a member? Sign up!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:autoLink="all"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:text="Login To Your Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email_edit"
+        android:layout_marginBottom="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignRight="@+id/login"
+        android:layout_alignEnd="@+id/login" />
+
+    <Button
+        android:id="@+id/pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="密码"
+        android:textColor="#707070"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:background="@drawable/border_line_while"
+        android:layout_alignBottom="@+id/password_edit"
+        android:layout_toStartOf="@+id/email_edit"
+        android:layout_toLeftOf="@+id/email_edit" />
+
+
+    <Button
+        android:id="@+id/email"
+        android:text="手机号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#707070"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border_line_while"
+        android:layout_marginTop="123dp"
+        android:layout_marginLeft="40dp"
+        android:drawableLeft="@drawable/ic_login_phone"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="16"
+        android:hint="输入您的手机号"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/login"
+        android:layout_toEndOf="@+id/email"
+        android:layout_toRightOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/email_edit"
+        android:layout_alignStart="@+id/email_edit"
+        android:layout_alignLeft="@+id/email_edit"
+        />
+
+
+</RelativeLayout>
+

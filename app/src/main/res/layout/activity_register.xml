@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    >
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp" />
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="请输入有效的邮箱地址"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+        android:layout_toRightOf="@+id/email"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_pswd"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="请输入6-12位密码"
+        android:layout_below="@+id/email_edit"
+        android:layout_alignLeft="@+id/email_edit"
+        android:layout_alignStart="@+id/email_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:id="@+id/password2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_pswd"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/password2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="请确认密码"
+        android:layout_below="@+id/password_edit"
+        android:layout_alignLeft="@+id/password_edit"
+        android:layout_alignStart="@+id/password_edit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <ImageView
+        android:id="@+id/name"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_user1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_alignTop="@+id/gender"
+        android:layout_marginTop="73dp"/>
+
+    <ImageView
+        android:id="@+id/region"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_region"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/region_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/name_edit"
+        android:layout_alignLeft="@+id/name_edit"
+        android:layout_alignStart="@+id/name_edit"
+        android:hint="请输入您所在地区"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入您的真实姓名"
+        android:ems="10"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:text="Sign Up"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:background="#22a86c"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/region_edit"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:contentDescription="gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gender"
+        android:layout_below="@+id/password2_edit"
+        android:layout_alignLeft="@+id/password2_edit"
+        android:layout_alignStart="@+id/password2_edit">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:text="女"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:text="男"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/gender"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/ic_gender"
+        android:layout_below="@+id/password2_edit"
+        android:layout_alignLeft="@+id/password2"
+        android:layout_alignStart="@+id/password2" />
+</RelativeLayout>

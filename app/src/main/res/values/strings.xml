@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DC</string>
+    <string name="server_add">http://139.199.162.139:8080</string>
+</resources>
+
+

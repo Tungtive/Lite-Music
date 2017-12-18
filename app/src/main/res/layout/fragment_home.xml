@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/roll_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:rollviewpager_play_delay="3000"
+            app:rollviewpager_hint_paddingBottom="8dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            </com.jude.rollviewpager.RollPagerView>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+<<<<<<< HEAD
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="210dp"
+        android:layout_height="40dp">
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+=======
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_height="210dp">
+     </android.support.v4.view.ViewPager>
+>>>>>>> 7d9c07a30238245008c650f3d764d709944b6626
+<android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/swipe_refresh"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+   </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>
